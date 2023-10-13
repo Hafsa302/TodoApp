@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme='dark'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- -----------Favicon -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <!-- -----------------Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ------------------FontAwsome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ----------------CSS link--------------------- -->
+    <link rel="stylesheet" href="todo.css">
+        <!-- ---------------Title -->
+    <title>FMP TodoApp Project</title>
+</head>
+
+<body class="container  ">
+    
+    <div class="text-center mt-5">
+        <p class="fw-bold fs-1 text-danger-emphasis">TodoApp</p>
+    </div>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-8 col-12 ">
+                <div class="  mt-5">
+                    <div class="input-group  w-100 ">
+                        <input type="text" class="form-control border border-warning d-flex  justify-content-center"
+                            id="inp" placeholder="Add Your Task" aria-label="Username">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-2 grid gap-3">
+        <div class="todo-btn">
+            <button class="btn btn-warning" id="addbtn" 
+            onclick="addTodo()"
+            >AddTodo</button>
+        </div>
+        <div>
+            <button class="btn btn-warning" id="delAllbtn" onclick="deleteAll()">Delete All</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container mt-5 ">
+        <div class="row d-flex  justify-content-center align-items-center ">
+            <div class="col-12 col-md-8  ">
+                <ul class="list" id="list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- -----------------Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- ------------------------SweetAlert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ------------------JS Link -->
+    <script type="module" src="todo.js"></script>
+    <!-- <script type="module" src="/js/index.js"></script> -->
+    <!-- <script type="module" src="/js/loginPage.js"></script> -->
+
+</body>
+
+</html>
